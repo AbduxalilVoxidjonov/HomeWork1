@@ -42,6 +42,16 @@ class MainActivity : AppCompatActivity() {
                     fragmentIdReplace.text="1-fragment"
                 }
             }
+            fragmentIdShow.setOnClickListener{
+                val fragmentManager = supportFragmentManager
+                fragmentManager.beginTransaction().show(fragmentLayout1).commit()
+                fragmentManager.beginTransaction().show(fragmentLayout2).commit()
+            }
+            fragmentIdHide.setOnClickListener{
+                val fragmentManager = supportFragmentManager
+                fragmentManager.beginTransaction().hide(fragmentLayout1).commit()
+                fragmentManager.beginTransaction().hide(fragmentLayout2).commit()
+            }
         }
     }
 }
