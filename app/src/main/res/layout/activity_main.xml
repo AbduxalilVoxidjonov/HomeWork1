@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:gravity="center"
+         android:orientation="vertical"
+    android:layout_height="100dp">
+       <Button
+               android:layout_width="wrap_content"
+               android:id="@+id/fragment_id_replace"
+               android:text="2-fragment"
+               android:textSize="20sp"
+               android:layout_height="wrap_content"/>
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:layout_width="match_parent"
+            android:id="@+id/fragment_container_view_tag"
+            android:name="com.example.homework1.BlankFragment1"
+            android:layout_height="match_parent">
+        </fragment>
+    </LinearLayout>
+
+</LinearLayout>
